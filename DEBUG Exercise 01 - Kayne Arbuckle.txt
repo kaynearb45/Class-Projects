@@ -1,0 +1,42 @@
+Kayne Arbuckle
+November 20, 2026
+
+Questions
+
+1. What steps would you take to identify any issues in the code?
+I would review the variable declarations and check that each variable is spelled and used correctly. I would then read through the code line by line, check the calculations and conditions, and test the program with different scores. I would also check that the program accepts 0 to quit.
+
+2. What actions could the developer have taken to minimize the number of errors?
+The developer could have planned the program before writing it, used clear variable names, and kept the indentation consistent. They could also have tested each section as it was written and reviewed the code before finishing.
+
+Corrected Debugging Exercise
+
+// This pseudocode determines whether students pass or fail a course.
+// A student must average 60 or more on two tests.
+start
+   Declarations
+      num firstTest
+      num secondTest
+      num average
+      num PASSING = 60
+
+   output "Enter first score or 0 to quit"
+   input firstTest
+
+   while firstTest <> 0
+      output "Enter second score"
+      input secondTest
+
+      average = (firstTest + secondTest) / 2
+      output "Average is ", average
+
+      if average >= PASSING then
+         output "Pass"
+      else
+         output "Fail"
+      endif
+
+      output "Enter first score or 0 to quit"
+      input firstTest
+   endwhile
+stop
